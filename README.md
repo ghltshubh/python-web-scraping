@@ -76,13 +76,13 @@ heroku apps:create python-web-scraper
 - return the number of occurences of <word> within text:
   python-web-scraper.herokuapp.com/searchhtml/<word>/<site>
   
-  example: python-web-scraper.herokuapp.com/searchhtml/login/www.google.com
+  example: python-web-scraper.herokuapp.com/searchhtml/search/www.google.com
 
 
 - return the number of occurences of <word> within html:
  python-web-scraper.herokuapp.com/searchtext/<word>/<site>
  
- example: python-web-scraper.herokuapp.com/searchtext/login/www.google.com
+ example: <python-web-scraper.herokuapp.com/searchtext/search/www.google.com>
  
 
 The website has to be in this form: "www.google.com", don't use "http" or "https". You can use it either in web browser or with CLI <em>curl</em> command.
