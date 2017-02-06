@@ -61,6 +61,9 @@ heroku apps:create python-web-scraper
 <br></br>
 
 <b>Usage</b>:
+<br></br>
+Here we'll use the word "search" in URL argument
+<br></br>
 
 - return only text (replace [site]):
   python-web-scraper.herokuapp.com/html/[site]
