@@ -12,45 +12,55 @@ Deploying the application in Heroku Platform:
 
 sudo apt-get install heroku 
 
-2) Sign Up in Heroku website, after you can Sign In via CLI:
+- Sign Up in Heroku website, after you can Sign In via CLI:
+
 heroku login
 
-3) Create a new folder in your computer to host the project:
+- Create a new folder in your computer to host the project:
+
 mkdir python-web-scraping
 cd python-web-scraping
 
-4) create a Vitual env and activate it:
+- create a Vitual env and activate it:
+
 virtualenv venv
 source venv/bin/activate
 
-5) Install bs4 and flask:
+- Install bs4 and flask:
+
 pip install bs4
 pip install flask
 
-6) Copy the python file inside the folder
+- Copy the python file (python_web_scraper.py) inside the folder you just created.
 
-7) In order to install all dependencies in Heroku platform, we need to create a file with all necessary modules:
+- In order to install all dependencies in Heroku platform, we need to create a file with all necessary modules:
+
 pip freeze > requirements.txt
 
-8) Create a file named "Procfile", so Heroku knows wich command to execute. 
+- Create a file named "Procfile", so Heroku knows wich command to execute. 
+
 echo "web: python python_web_scraper.py" > Procfile
 
-9) Now we can initialize a Git repository:
+- Now we can initialize a Git repository:
+
 git init
 
-10) create a file named .gitignore , inside this file put the following lines:
+- create a file named .gitignore , inside this file put the following lines:
+
 *.pyc
 venv
 
 This way, GIT will ignore some files that are not necessary to commit.
 
-11) Commit and deploy the application:
+- Commit and deploy the application:
+
 git add .
 git commit -m "first deploy"
 heroku apps:create python-web-scraper
 
 
 Usage:
+
 - return only text (replace <site>):
   python-web-scraper.herokuapp.com/html/<site>
   
