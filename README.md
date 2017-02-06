@@ -47,8 +47,8 @@ Keep in mind that the application also returns the whole html or the whole text 
 
 - create a file named .gitignore , inside this file put the following lines:
 
-_ *.pyc 
-* venv 
+*.pyc 
+venv 
 
 This way, GIT will ignore some files that are not necessary to commit.
 
@@ -79,7 +79,7 @@ heroku apps:create python-web-scraper
   example: python-web-scraper.herokuapp.com/searchhtml/login/www.google.com
 
 
--return the number of occurences of <word> within html:
+- return the number of occurences of <word> within html:
  python-web-scraper.herokuapp.com/searchtext/<word>/<site>
  
  example: python-web-scraper.herokuapp.com/searchtext/login/www.google.com
