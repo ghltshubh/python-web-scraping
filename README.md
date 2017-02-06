@@ -9,6 +9,7 @@ Keep in mind that the application also returns the whole html or the whole text 
 Deploying the application in Heroku Platform:
 
 - Install Heroku CLI tools (check the syntax for your system):
+
 sudo apt-get install heroku 
 
 2) Sign Up in Heroku website, after you can Sign In via CLI:
