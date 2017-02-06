@@ -62,25 +62,25 @@ heroku apps:create python-web-scraper
 
 <b>Usage</b>:
 
-- return only text (replace <site>):
-  python-web-scraper.herokuapp.com/html/<site>
+- return only text (replace [site]):
+  python-web-scraper.herokuapp.com/html/[site]
   
   example: python-web-scraper.herokuapp.com/html/www.google.com
 
 - return html:
-  python-web-scraper.herokuapp.com/text/<site>
+  python-web-scraper.herokuapp.com/text/[site]
   
   example: python-web-scraper.herokuapp.com/text/www.google.com 
   
   
-- return the number of occurences of <word> within text:
-  python-web-scraper.herokuapp.com/searchhtml/<word>/<site>
+- return the number of occurences of [word] within text:
+  python-web-scraper.herokuapp.com/searchhtml/[word]/[site]
   
   example: python-web-scraper.herokuapp.com/searchhtml/search/www.google.com
 
 
-- return the number of occurences of <word> within html:
- python-web-scraper.herokuapp.com/searchtext/<word>/<site>
+- return the number of occurences of [word] within html:
+ python-web-scraper.herokuapp.com/searchtext/[word]/[site]
  
  example: python-web-scraper.herokuapp.com/searchtext/search/www.google.com
  
